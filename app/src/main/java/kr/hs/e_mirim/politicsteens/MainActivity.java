@@ -53,8 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout=(TabLayout)findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("홈"));
-        tabLayout.addTab(tabLayout.newTab().setText("콘텐츠"));
+        tabLayout.addTab(tabLayout.newTab().setText("정당"));
         tabLayout.addTab(tabLayout.newTab().setText("광장"));
+        tabLayout.addTab(tabLayout.newTab().setText("콘텐츠"));
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
 
@@ -109,12 +110,15 @@ public class MainActivity extends AppCompatActivity {
                 case 0:
                     HomeFragment tab1=new HomeFragment();
                     return tab1;
-                case 1:
+                case 3:
                     ContentsFragment tab2=new ContentsFragment();
                     return tab2;
-                case 2:
+                case 1:
                     JustnessFragment tab3=new JustnessFragment();
                     return tab3;
+                case 2:
+                    SpaceFragment tab4=new SpaceFragment();
+                    return tab4;
                 default:
                     return null;
             }
@@ -132,7 +136,8 @@ public class MainActivity extends AppCompatActivity {
             switch (position) {
                 case 0:
                     return "홈";
-                case 1:
+
+                case 3:
                     return "콘텐츠";
                 case 2:
                     return "광장";

@@ -28,7 +28,7 @@ public class CustomAdapter extends PagerAdapter {
     @Override
     public int getCount() {
         // TODO Auto-generated method stub
-        return 3; //이미지 개수 리턴(그림이 10개라서 10을 리턴)
+        return 2; //이미지 개수 리턴(그림이 10개라서 10을 리턴)
     }
 
     //ViewPager가 현재 보여질 Item(View객체)를 생성할 필요가 있는 때 자동으로 호출
@@ -50,7 +50,7 @@ public class CustomAdapter extends PagerAdapter {
 
         //ImageView에 현재 position 번째에 해당하는 이미지를 보여주기 위한 작업
         //현재 position에 해당하는 이미지를 setting
-        img.setImageResource(R.drawable.issue1 + position);
+        img.setImageResource(R.drawable.issue_1 + position);
 
         //ViewPager에 만들어 낸 View 추가
         container.addView(view);

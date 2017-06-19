@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="kr.hs.e_mirim.politicsteens.MainActivity">
 
     <ScrollView
@@ -16,14 +17,14 @@
             android:weightSum="1">
 
             <ImageView
-                android:layout_width="171dp"
-                android:layout_height="53dp"
-                android:background="@drawable/issue_title" />
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:background="@drawable/today_issue" />
 
             <android.support.v4.view.ViewPager
                 android:id="@+id/pager"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="145dp"
                 android:scaleType="fitXY"></android.support.v4.view.ViewPager>
 
             <ImageButton

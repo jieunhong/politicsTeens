@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
         final ViewPager viewPager=(ViewPager)view.findViewById(R.id.pager);
         CustomAdapter adapter=new CustomAdapter(getActivity().getLayoutInflater());
         viewPager.setAdapter(adapter);
-        viewPager.setPageMargin(getResources().getDisplayMetrics().widthPixels/-120);
+        viewPager.setPageMargin(getResources().getDisplayMetrics().widthPixels/-20);
         viewPager.setOffscreenPageLimit(2);
 
         listView=(ListView)view.findViewById(R.id.listview);

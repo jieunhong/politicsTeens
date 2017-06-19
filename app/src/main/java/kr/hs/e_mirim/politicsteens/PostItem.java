@@ -7,7 +7,15 @@ import android.graphics.drawable.Drawable;
  */
 
 public class PostItem {
-   private Drawable post_image;
+   private int post_image;
 
+   public PostItem(int post_image)
+   {
+      this.post_image=post_image;
+   }
+
+   public int getPost_image() { return post_image; }
+
+   public void setPost_image(int post_image) { this.post_image= post_image; }
 
 }

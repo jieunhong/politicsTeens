@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity
         tabLayout.addTab(tabLayout.newTab().setText("광장"));
         tabLayout.addTab(tabLayout.newTab().setText("콘텐츠"));
 
+        tabLayout.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.green));
+
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
 
         // Set up the ViewPager with the sections adapter.

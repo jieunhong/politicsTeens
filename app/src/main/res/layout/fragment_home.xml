@@ -18,7 +18,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="71dp"
+                android:layout_height="47dp"
                 android:background="@drawable/today_issue" />
 
             <android.support.v4.view.ViewPager
@@ -29,15 +29,16 @@
                 android:layout_weight="1.09"></android.support.v4.view.ViewPager>
 
             <ImageButton
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="196dp"
-                android:background="@drawable/youtube_but"
-                android:padding="5dp" />
+                android:background="@drawable/news"
+                />
 
             <ImageView
-                android:layout_width="171dp"
-                android:layout_height="53dp"
-                android:background="@drawable/popular_write" />
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:background="@drawable/popular"
+                android:layout_weight="1.90" />
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -49,8 +50,9 @@
                 >
             <ListView
                 android:id="@+id/listview"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="212dp">
+                android:layout_height="240dp">
 
             </ListView>
             </LinearLayout>

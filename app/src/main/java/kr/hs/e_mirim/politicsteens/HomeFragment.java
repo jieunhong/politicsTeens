@@ -41,10 +41,9 @@ public class HomeFragment extends Fragment {
         listView=(ListView)view.findViewById(R.id.listview);
         postItemArrayList=new ArrayList<PostItem>();
 
-        postItemArrayList.add(new PostItem(R.drawable.write1));
-        postItemArrayList.add(new PostItem(R.drawable.write2));
-        postItemArrayList.add(new PostItem(R.drawable.write3));
-        postItemArrayList.add(new PostItem(R.drawable.write4));
+        postItemArrayList.add(new PostItem(R.drawable.popu_1));
+        postItemArrayList.add(new PostItem(R.drawable.popu_2));
+        postItemArrayList.add(new PostItem(R.drawable.popu_3));
 
         postListAdapter=new PostListAdapter(getContext(),postItemArrayList);
         listView.setAdapter(postListAdapter);
